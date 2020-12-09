@@ -99,3 +99,56 @@ nav {
 .ville {
   border: none;
 }
+/* FILTERS*/
+#filters {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 10px;
+}
+
+#filters_list {
+  width: 900px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+}
+#filters_list i {
+  display: flex;
+  color: #0065fc;
+  background-color: #deebff;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+#filters_list div {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+}
+#filters_list .medium {
+  padding: 0 10px;
+}
+#filters_list div:hover {
+  background-color: #deebff;
+}
+#filters_info {
+  display: flex;
+  align-items: center;
+}
+#filters_info i {
+  display: flex;
+  color: #0065fc;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
+  margin-right: 10px;
+}
