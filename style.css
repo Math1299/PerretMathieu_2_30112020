@@ -1,3 +1,17 @@
+/*FONT SIZE AND WEIGHT*/
+
+.big {
+  font-weight: 800;
+  font-size: 20px;
+}
+.medium {
+  font-weight: 700;
+  font-size: 18px;
+}
+.small {
+  font-weight: 400;
+  font-size: 16px;
+}
 /* GLOBAL CONTAINER + BODY*/
 body {
   width: 100%;
@@ -41,4 +55,47 @@ nav {
 #nav_list a:hover {
   border-top: 1px solid #0065fc;
   color: #0065fc;
+}
+/*FINDER*/
+#search {
+  display: flex;
+  flex-direction: column;
+}
+#top_search {
+  display: flex;
+  flex-direction: column;
+}
+#top_search h2 {
+  margin-bottom: 0;
+}
+#top_search p {
+  margin-top: 1px;
+}
+#form_search {
+  display: flex;
+  width: 270px;
+  border: 1.5px solid #f2f2f2;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+.fa-map-marker-alt {
+  width: 15px;
+  height: 12px;
+  margin: 15px 15px;
+}
+/* LE BOUTON NE FONCTIONNE PAS*/
+.button {
+  color: white;
+  background-color: #0065fc;
+  border: 1px solid #f2f2f2;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0 20px;
+}
+.button:hover {
+  background-color: #f2f2f2;
+  color: #0065fc;
+}
+.ville {
+  border: none;
 }
