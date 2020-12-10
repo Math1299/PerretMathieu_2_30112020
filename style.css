@@ -5,12 +5,12 @@
   font-size: 20px;
 }
 .medium {
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 16px;
 }
 .small {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 /* GLOBAL CONTAINER + BODY*/
 body {
@@ -73,8 +73,9 @@ nav {
 }
 #form_search {
   display: flex;
-  width: 270px;
-  border: 1.5px solid #f2f2f2;
+  width: 290px;
+  height: 40px;
+  border: 1.5px solid #f1f1f1;
   border-radius: 15px;
   background-color: #f2f2f2;
 }
@@ -151,4 +152,81 @@ nav {
   border: 2px solid #f2f2f2;
   border-radius: 50%;
   margin-right: 10px;
+  font-size: small;
+}
+/*SECTION 1 HEBERGEMENT  ET LES PLUS POPULAIRES*/
+#section1 {
+  display: flex;
+  justify-content: space-between; /* pas de marge latérale*/
+  height: 520px;
+}
+/* PARTIE GAUCHE HEBERGEMENTS A MARSEILLE*/
+#accomodation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 810px;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  align-items: center; /* centrer dans la hauteur*/
+  justify-content: space-evenly; /* espacement égal */
+}
+#Hebergements {
+  display: flex;
+  width: 90%;
+}
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box6 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 230px;
+  height: 160px;
+  border: 5px solid white;
+  border-radius: 20px;
+  background-color: white;
+}
+#box1 img,
+#box2 img,
+#box3 img,
+#box4 img,
+#box5 img,
+#box6 img {
+  width: 100%;
+  height: 60%;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover; /* on garde le ration de l'image*/
+}
+#section1 a {
+  text-decoration: none;
+  color: black;
+  box-shadow: 5px 5px 5px lightgrey;
+  border-radius: 20px;
+  transform: scale(1);
+  transition: transform 0.4s;
+}
+#section1 a:hover {
+  transform: scale(1.05);
+}
+.box_legend p {
+  display: flex;
+  flex-direction: column;
+  margin: 3px 0 0 3px;
+}
+#section1 .logo_star {
+  margin: 3px 0 0 5px;
+  color: #0065fc;
+}
+/*SPAN*/
+.grey_star {
+  color: #f2f2f2;
+}
+#bottom_accomodation {
+  display: flex;
+  width: 90%;
+}
+#popular {
+  width: 300px;
 }
