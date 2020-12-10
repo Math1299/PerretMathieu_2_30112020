@@ -198,7 +198,8 @@ nav {
   border-radius: 15px 15px 0 0;
   object-fit: cover; /* on garde le ration de l'image*/
 }
-#section1 a {
+#section1 a,
+#section2 a {
   text-decoration: none;
   background-color: white;
   color: black;
@@ -207,7 +208,8 @@ nav {
   transform: scale(1);
   transition: transform 0.4s;
 }
-#section1 a:hover {
+#section1 a:hover,
+#section2 a:hover {
   transform: scale(1.05);
 }
 .box_legend p {
@@ -279,5 +281,35 @@ nav {
   display: flex;
   width: 100%;
 }
-#box10 {
+#box10,
+#box12 {
+  height: 320px;
+  width: 260px;
+}
+#box10 img,
+#box12 img {
+  display: flex;
+  object-fit: cover;
+  width: 260px;
+  height: 280px;
+  border-radius: 15px 15px 0 0;
+}
+#box11,
+#box13 {
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  width: 260px;
+  justify-content: space-between;
+}
+#box11 img,
+#box13 img {
+  display: flex;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  width: 260px;
+  height: 110px;
+}
+#section2 .box_legend {
+  margin: 10px;
 }
