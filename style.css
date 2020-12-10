@@ -303,6 +303,7 @@ nav {
   width: 260px;
   justify-content: space-between;
 }
+/* DANS BOX11 LES 2 BOX NE FONT PAS LA MEME HAUTEUR*/
 #box11_top {
   width: 260px;
   height: 180px;
@@ -325,6 +326,7 @@ nav {
   width: 260px;
   height: 80px;
 }
+/*LES DEUX BOX SONT IDENTIQUE*/
 #box13 img {
   display: flex;
   object-fit: cover;
@@ -334,4 +336,25 @@ nav {
 }
 #section2 .box_legend {
   margin: 10px;
+}
+/*FOOTER*/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  margin-top: 30px;
+}
+footer ul {
+  list-style: none;
+  margin-right: 150px;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+}
+footer li {
+  padding-bottom: 5px;
+}
+footer a:hover {
+  color: #0065fc;
 }
