@@ -294,6 +294,7 @@ nav {
   height: 280px;
   border-radius: 15px 15px 0 0;
 }
+
 #box11,
 #box13 {
   display: flex;
@@ -302,7 +303,28 @@ nav {
   width: 260px;
   justify-content: space-between;
 }
-#box11 img,
+#box11_top {
+  width: 260px;
+  height: 180px;
+}
+#box11_top img {
+  display: flex;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  width: 260px;
+  height: 140px;
+}
+#box11_bottom {
+  width: 260px;
+  height: 120px;
+}
+#box11_bottom img {
+  display: flex;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  width: 260px;
+  height: 80px;
+}
 #box13 img {
   display: flex;
   object-fit: cover;
