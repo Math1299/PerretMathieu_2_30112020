@@ -1,5 +1,8 @@
+/* TAILLE REELLE DES BOX PAS D INTERFERANCE AVEC PADDING ET MARGIN*/
+* {
+  box-sizing: border-box;
+}
 /*FONT SIZE AND WEIGHT*/
-
 .big {
   font-weight: 800;
   font-size: 20px;
@@ -19,7 +22,7 @@ body {
 }
 #container {
   max-width: 1200px;
-  min-width: 500px;
+  min-width: 300px; /* POUR LE RESPONSIVE NATEL*/
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -28,27 +31,34 @@ body {
 /* HEADER*/
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* POSITIONNEMENT IMG A GAUCHE ET NAV A DROITE*/
 }
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  flex-wrap: wrap; /*ANTICIPATION DU RESPONSIVE*/
   width: 500px;
 }
 #nav_list {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  flex-wrap: nowrap; /*RESTERONT SOLIDAIRE POUR LE RESPONSIVE*/
+  width: 70%;
 }
 #nav_list li {
   list-style: none;
 }
-#nav_list a {
+nav a {
   text-decoration: none;
   color: black;
-  padding: 15px 8px; /* BORDER TOP LARGER THAN TEXT*/
+  padding: 15px 8px; /* BORDER TOP PLUS LARGE QUE LE TEXTE*/
 }
-#nav_list .no_anchor a {
+#no_anchor {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+}
+#no_anchor a {
   color: #0065fc;
   font-weight: bold;
 }
@@ -70,6 +80,10 @@ nav {
 }
 #top_search p {
   margin-top: 1px;
+}
+#container_form {
+  display: flex;
+  width: 100%;
 }
 #form_search {
   display: flex;
@@ -103,7 +117,7 @@ nav {
 /* FILTERS*/
 #filters {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row wrap; /*COMBINAISON DE FLEX-DIRECTION ET FLEX-WRAP*/
   margin-top: 10px;
 }
 
@@ -157,6 +171,7 @@ nav {
 /*SECTION 1 HEBERGEMENT  ET LES PLUS POPULAIRES*/
 #section1 {
   display: flex;
+  flex-wrap: wrap; /*ANTICIPATION DU RESPONSIVE*/
   justify-content: space-between; /* pas de marge latérale*/
   height: 520px;
 }
@@ -210,7 +225,7 @@ nav {
 }
 #section1 a:hover,
 #section2 a:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* EFFET ZOOM AU SURVOL*/
 }
 .box_legend p {
   display: flex;
@@ -249,9 +264,10 @@ nav {
 #box7,
 #box8,
 #box9 {
+  /*RATION IDENTIQUE POUR LE RESPONSIVE NATEL*/
   display: flex;
   flex-direction: row;
-  width: 310px;
+  width: 300px;
   height: 120px;
   border: 5px solid white;
   border-radius: 25px;
@@ -259,8 +275,8 @@ nav {
 #box7 img,
 #box8 img,
 #box9 img {
-  width: 140px;
-  height: 120px;
+  width: 45%;
+  height: 110px;
   display: flex;
   object-fit: cover;
   border-radius: 15px 0 0 15px;
@@ -290,7 +306,7 @@ nav {
 #box12 img {
   display: flex;
   object-fit: cover;
-  width: 260px;
+  width: 100%;
   height: 280px;
   border-radius: 15px 15px 0 0;
 }
@@ -312,7 +328,7 @@ nav {
   display: flex;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
-  width: 260px;
+  width: 100%;
   height: 140px;
 }
 #box11_bottom {
@@ -323,7 +339,7 @@ nav {
   display: flex;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
-  width: 260px;
+  width: 100%;
   height: 80px;
 }
 /*LES DEUX BOX SONT IDENTIQUE*/
@@ -331,7 +347,7 @@ nav {
   display: flex;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
-  width: 260px;
+  width: 100%;
   height: 110px;
 }
 #section2 .box_legend {
