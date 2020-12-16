@@ -19,6 +19,7 @@
 body {
   width: 100%;
   font-family: "Raleway", sans-serif;
+  margin: 0;
 }
 #container {
   max-width: 1200px;
@@ -42,7 +43,6 @@ nav {
 #nav_list {
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap; /*RESTERONT SOLIDAIRE POUR LE RESPONSIVE*/
   width: 70%;
 }
 #nav_list li {

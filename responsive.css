@@ -1,0 +1,120 @@
+@media screen and (min-width: 768px) and (max-width: 1074px) {
+  /*HEADER*/
+  nav {
+    width: 100%;
+  }
+  header img {
+    position: absolute; /* LE LOGO EST FIXE*/
+  }
+  #nav_list {
+    order: 1; /*SERA LE PREMIER A DESCENDRE*/
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  #no_anchor {
+    width: 100%; /* PREND TOUTE LA LARGEUR EN GARDANT LE FLEX-END*/
+  }
+  #nav_list li.hebergements,
+  #nav_list li.activites {
+    width: 50%; /* LES DEUX ANCRES SONT AXEES*/
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 15px;
+  }
+  #nav_list li.hebergements:hover,
+  #nav_list li.activites:hover {
+    border-bottom: 2px solid #0065fc;
+  }
+  #nav_list a:hover {
+    border-top: none;
+  }
+  /*FINDER*/
+  #container_form {
+    justify-content: center; /*DEPLACEMENT AU CENTRE */
+  }
+  /*FILTERS*/
+  #filters_list {
+    width: 100%; /*REPREND TOUTE LA LARGEUR*/
+  }
+  #filters_eco,
+  #filters_family,
+  #filters_love,
+  #filters_pets {
+    margin-right: 20px; /*POUR LE RETOUR A LA LIGNE PLUS TOT SI SCROLL*/
+  }
+  /*SECTION 1*/
+
+  #section1 {
+    height: 100%; /*SINON LA SECTION 1 DEBORDE SUR LA SECTION 2*/
+  }
+  #popular {
+    order: 1; /*LA PARTIE DE DROITE PASSE EN 1ER*/
+    width: 100%; /*REPREND TOUTE LA LARGEUR*/
+    height: 500px;
+    margin-bottom: 10px;
+  }
+  #title_popular {
+    width: 90%; /*POUR L AXER SUR HEBERGEMENT A MARSEILLE*/
+  }
+  #box7,
+  #box8,
+  #box9 {
+    width: 550px;
+  }
+  #accomodation {
+    order: 2; /*LA PARTIE DE GAUCHE PASSE EN 2ND*/
+    flex-direction: column; /*PASSE EN COLONNE*/
+    height: 1500px;
+    width: 100%;
+  }
+  #box1,
+  #box2,
+  #box3,
+  #box4,
+  #box5,
+  #box6 {
+    width: 400px;
+    height: 200px;
+  }
+  #box1 img,
+  #box2 img,
+  #box3 img,
+  #box4 img,
+  #box5 img,
+  #box6 img {
+    height: 65%;
+  }
+  /*SECTION 2 ACTIVITE A MARSEILLE*/
+  #section2 {
+    flex-direction: column;
+    height: 1400px;
+  }
+  #box11,
+  #box13 {
+    height: 425px;
+    width: 400px;
+  }
+  #box10,
+  #box12,
+  #box11_top,
+  #box11_bottom,
+  #box13_top,
+  #box13_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 200px;
+  }
+  #box10 img,
+  #box12 img,
+  #box11_top img,
+  #box11_bottom img,
+  #box13_top img,
+  #box13_bottom img {
+    height: 65%;
+  }
+  /*FOOTER*/
+  footer ul {
+    margin-right: 50px; /*REDUCTION DE LA MARGE POUR QU IL RESTE LINEAIRE*/
+  }
+}
