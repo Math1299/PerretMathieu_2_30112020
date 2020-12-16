@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <script
       src="https://kit.fontawesome.com/501f6943b3.js"
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="images/logo/Reservia.svg" />
@@ -24,10 +25,14 @@
         <!-- BARRE DE NAVIGATION AVEC LES DEUX ANCRES-->
         <nav>
           <ul id="nav_list">
-            <li><a href="#Hebergements">Hébergements</a></li>
-            <li><a href="#Activites">Activités</a></li>
-            <li class="no_anchor"><a href="#">S'inscrire</a></li>
+            <li class="hebergements">
+              <a href="#Hebergements">Hébergements</a>
+            </li>
+            <li class="activites"><a href="#Activites">Activités</a></li>
           </ul>
+          <div id="no_anchor">
+            <a href="#">S'inscrire</a>
+          </div>
         </nav>
       </header>
       <!--FINDER-->
@@ -40,16 +45,18 @@
           <p class="small">En plein centre ville ou en pleine nature</p>
         </div>
         <!-- PARTIE RECHERCHE FORMULAIRE-->
-        <div id="form_search">
-          <i class="fas fa-map-marker-alt"></i>
-          <input
-            type="search"
-            class="ville"
-            name="ville"
-            placeholder="   Marseille, France"
-          />
-          <!--BOUTON NON FONTCIONNEL -->
-          <button class="button">Rechercher</button>
+        <div id="container_form">
+          <div id="form_search">
+            <i class="fas fa-map-marker-alt"></i>
+            <input
+              type="search"
+              class="ville"
+              name="ville"
+              placeholder="   Marseille, France"
+            />
+            <!--BOUTON NON FONTCIONNEL -->
+            <button class="button">Rechercher</button>
+          </div>
         </div>
       </section>
       <!--FILTERS-->
