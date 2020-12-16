@@ -1,7 +1,7 @@
-@media screen and (min-width: 768px) and (max-width: 1074px) {
+@media screen and (max-width: 1074px) {
   /*HEADER*/
   nav {
-    width: 100%;
+    width: 100%; /*REPREND TOUTE LA LARGEUR*/
   }
   header img {
     position: absolute; /* LE LOGO EST FIXE*/
@@ -116,5 +116,57 @@
   /*FOOTER*/
   footer ul {
     margin-right: 50px; /*REDUCTION DE LA MARGE POUR QU IL RESTE LINEAIRE*/
+  }
+}
+
+/********************* POUR LES NATELS *****************************/
+
+@media screen and (max-width: 767px) {
+  #filters_list {
+    height: 170px;
+    justify-content: flex-start; /*RETOUR A LA LIGNE A GAUCHE*/
+  }
+  /*SECTION 1*/
+
+  #popular {
+    border-radius: 0;
+  }
+  #box7,
+  #box8,
+  #box9 {
+    width: 300px;
+  }
+  #accomodation {
+    height: 1300px;
+    background-color: transparent; /*LE FOND DISPARAIT*/
+  }
+  #box1,
+  #box2,
+  #box3,
+  #box4,
+  #box5,
+  #box6 {
+    width: 300px;
+    height: 175px;
+  }
+  #section2 {
+    height: 1200px;
+  }
+  #box11,
+  #box13 {
+    height: 360px;
+    width: 300px;
+  }
+  #box10,
+  #box12 {
+    width: 300px;
+    height: 170px;
+  }
+  #box11_top,
+  #box11_bottom,
+  #box13_top,
+  #box13_bottom {
+    width: 300px;
+    height: 170px;
   }
 }
