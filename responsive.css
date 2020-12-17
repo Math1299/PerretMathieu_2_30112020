@@ -122,6 +122,20 @@
 /********************* POUR LES NATELS *****************************/
 
 @media screen and (max-width: 767px) {
+  /*MISE EN FORME SPECIALE CE FORMAT*/
+  #container {
+    padding: 0;
+  }
+  #search,
+  #filters,
+  #Activites,
+  header img {
+    padding: 0 15px;
+  }
+  #no_anchor {
+    width: 95%;
+  }
+  /*FILTERS*/
   #filters_list {
     height: 170px;
     justify-content: flex-start; /*RETOUR A LA LIGNE A GAUCHE*/
