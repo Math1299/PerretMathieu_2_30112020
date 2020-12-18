@@ -179,7 +179,7 @@ nav a {
 #accomodation {
   display: flex;
   flex-wrap: wrap;
-  width: 800px;
+  width: 68%;
   background-color: #f2f2f2;
   border-radius: 25px;
   align-items: center; /* centrer dans la hauteur*/
@@ -246,7 +246,7 @@ nav a {
 }
 /*PARTIE DROITE LES PLUS POPULAIRES*/
 #popular {
-  width: 360px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
