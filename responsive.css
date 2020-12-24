@@ -135,6 +135,36 @@
   #no_anchor {
     width: 95%;
   }
+  /*LE BOUTON NE FONCTIONNE PAS MAIS LOUPE*/
+
+  #form_search {
+    display: flex;
+    width: 195px;
+    height: 40px;
+    border: 1.5px solid #f1f1f1;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+  }
+  .button {
+    margin-left: -10px;
+    width: 50px;
+    color: transparent;
+    background-color: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 15px;
+    padding: 10px 20px;
+  }
+  .button:hover {
+    background-color: #f2f2f2;
+    color: transparent;
+  }
+
+  .fa-search::before {
+    color: white;
+    position: relative;
+    top: -15px;
+    left: -3px;
+  }
   /*FILTERS*/
   #filters_list {
     height: 170px;
